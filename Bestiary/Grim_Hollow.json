@@ -1,0 +1,340 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "LukasHB",
+				"abbreviation": "LukasHB",
+				"full": "LukasHB",
+				"version": "1.0",
+				"url": "https://raw.githubusercontent.com/LukasDnD/MyHomebrewMonsters/main/Bestiary/Grim_Hollow.json",
+				"authors": [
+					"Lukas"
+				],
+				"convertedBy": [
+					"Lukas"
+				]
+			}
+		],
+		"dateAdded": 1573259105,
+		"dateLastModified": 1573259105
+	},
+	"monster": [
+		{
+			"name": "Angel of Empyreus",
+			"size": [
+				"L"
+			],
+			"type": "celestial",
+			"source": "LukasHB",
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 21,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "33d10 + 264",
+				"average": 445
+			},
+			"speed": {
+				"walk": 40,
+				"fly": 90,
+				"canHover": false
+			},
+			"str": 29,
+			"dex": 23,
+			"con": 26,
+			"int": 25,
+			"wis": 18,
+			"cha": 30,
+			"passive": 21,
+			"cr": "22",
+			"shortName": true,
+			"senses": [
+				"truesight 120 ft."
+			],
+			"senseTags": [
+				"U"
+			],
+			"languages": [
+				"all",
+				"telepathy 120 ft"
+			],
+			"languageTags": [
+				"XX",
+				"TP"
+			],
+			"save": {
+				"str": "+16",
+				"int": "+14",
+				"wis": "+11",
+				"cha": "+17"
+			},
+			"skill": {
+				"perception": "+11",
+				"insight": "+11",
+				"arcana": "+14"
+			},
+			"resist": [
+				"fire",
+				"lightning",
+				"radiant",
+				{
+					"special": "bludgeoning, piercing, and slashing from nonmagical weapons"
+				}
+			],
+			"immune": [
+				"cold",
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"poisoned"
+			],
+			"trait": [
+				{
+					"name": "Celestial Arsenal",
+					"entries": [
+						"The Angel of Empyreus weapon attacks are magical. When it hits with any weapon, the weapon deals an extra 27 ({@damage 6d8}) radiant damage (included in the attack)."
+					]
+				},
+				{
+					"name": "Authoritative Mien",
+					"entries": [
+						"The Angel of Empyreus can cast the command spell at will (spell save {@dc 25})."
+					]
+				},
+				{
+					"name": "Divine Awareness",
+					"entries": [
+						"The Angel of Empyreus knows if it hears a lie."
+					]
+				},
+				{
+					"name": "Holy Aura",
+					"entries": [
+						"The Angel of Empyreus can project a 60-ft. aura of holiness as a bonus action. The aura affects all creatures within its area unless the Angel of Empyreus chooses to exclude a creature from the effect. A creature remains under the aura’s effect until it leaves the area, dies, or when the Angel of Empyrean chooses a new aura effect. Only one effect may be active at a time:  ",
+						"",
+						"  Judgement: Creatures who start their turn in the aura must succeed on a {@dc 25} Charisma saving throw. On a failure, the creature gains a level of {@condition exhaustion} as intensified feelings of guilt, doubt, remorse, and selfcriticism overwhelm the affected creature. Creatures who succeed on the saving throw are immune to the effect for one hour.",
+						"  Valor: Creatures who start their turn in the aura gain 15 temporary hit points, cannot be {@condition charmed} or {@condition frightened}, and have advantage on saving throws against spells and other magical effects",
+						""
+					]
+				}
+			],
+			"damageTags": [
+				"S",
+				"R"
+			],
+			"conditionInflict": [
+				"exhaustion"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Angel of Empyreus can make three attacks with its holy avenger"
+					]
+				},
+				{
+					"name": "Holy Avenger",
+					"entries": [
+						"{@atk mw} {@hit +24} to hit, reach 10 ft., one target. {@h}23 ({@dice 4d6+9}) slashing damage plus 27 ({@dice 6d8}) radiant damage. If the target is a fiend or undead, it takes an additional 22 ({@dice 4d10}) radiant damage."
+					]
+				},
+				{
+					"name": "Blazing Radiance {@recharge 5}",
+					"entries": [
+						"The Angel of Empyreus unleashes holy fire in a 60-foot cone. Each creature in that area must succeed on a {@dc 25} Dexterity saving throw or take 35 ({@dice 10d6}) fire and 35 ({@dice 10d6}) radiant damage. Creatures take half damage on a success."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"AOE"
+			],
+			"legendaryActions": 3,
+			"legendaryHeader": [
+				"The Angel of Empyreus can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature’s turn. The Angel of Empyreus regains spent legendary actions at the start of its turn."
+			],
+			"legendary": [
+				{
+					"name": "Fly",
+					"entries": [
+						"The Angel of Empyreus flies up to half its fly speed"
+					]
+				},
+				{
+					"name": "Sword",
+					"entries": [
+						"The Angel of Empyreus makes a holy avenger attack."
+					]
+				},
+				{
+					"name": "Hurl Sword (2 actions)",
+					"entries": [
+						"The Angel of Empyreus hurls its sword in a 30-foot line that is 5-feet wide. Each creature in that line must succeed on a {@dc 24} Dexterity saving throw or take 23 ({@dice 4d6 + 9}) slashing damage plus 27 ({@dice 6d8}) radiant damage. The sword immediately returns to its hand."
+					]
+				},
+				{
+					"name": "Recharge",
+					"entries": [
+						"The Angel of Empyreus recharges its Blazing Radiance."
+					]
+				}
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/LukasDnD/MyHomebrewMonsters/main/Images/Tokens/Angel_of_Empyreus_token.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/LukasDnD/MyHomebrewMonsters/main/Images/Art/Angel_of_Empyreus.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Whipskein Horror",
+			"size": [
+				"M"
+			],
+			"type": "aberration",
+			"source": "LukasHB",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"condition": "(natural armor)"
+				}
+			],
+			"hp": {
+				"formula": "15d8 + 30",
+				"average": 97
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 30
+			},
+			"str": 15,
+			"dex": 14,
+			"con": 15,
+			"int": 10,
+			"wis": 11,
+			"cha": 8,
+			"passive": 12,
+			"cr": "4",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"skill": {
+				"perception": "+2"
+			},
+			"immune": [
+				"acid"
+			],
+			"conditionImmune": [
+				"prone"
+			],
+			"languages": [
+				"any two languages"
+			],
+			"languageTags": [
+				"X"
+			],
+			"save": {
+				"dex": "+4"
+			},
+			"trait": [
+				{
+					"name": "False Appearance",
+					"entries": [
+						"While the whipskein horror hides its tendrils from sight, such as under clothing, it is indistinguishable from the ordinary humanoid it once was."
+					]
+				}
+			],
+			"traitTags": [
+				"False Appearance"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The whipskein horror makes four attacks."
+					]
+				},
+				{
+					"name": "Tendril",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 10 ft., one target. {@h}6 ({@damage 1d8 + 2}) bludgeoning damage. If the target is a Medium or smaller creature, it is {@condition grappled} (escape {@dc 14}). Until this grapple ends, the target is {@condition restrained}, and the whipskein horror can’t use that tendril against another target. The horror has four tendrils."
+					]
+				},
+				{
+					"name": "Spit",
+					"entries": [
+						"{@atk rw} {@hit 4} to hit, range 30 ft., one target. {@h}6 ({@damage 1d8 + 2}) poison damage, and the target must succeed on a {@dc 12} Constitution saving throw or become {@condition poisoned} until the end of the whipskein horror’s next turn. Being within 5 feet of a hostile creature doesn’t impose disadvantage on the horror’s ranged attack rolls with its spit."
+					]
+				},
+				{
+					"name": "Tendril Dance {@recharge 5}",
+					"entries": [
+						"The whipskein horror extends and wriggles its tendrils, releasing any creatures it has {@condition grappled}. Each creature within 30 feet of and able to see the horror must succeed on a {@dc 12} Wisdom saving throw or become {@condition charmed} by the horror. While {@condition charmed} in this way, a creature is {@condition incapacitated} and has a speed of 0. The effect ends for a creature if it takes damage, if another creature uses an action to shake the creature out of its stupor, or the horror fails to take a bonus action on its turn to continue the effect. The horror can’t take that bonus action while using a tendril to grapple another creature."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"conditionInflict": [
+				"charmed",
+				"grappled",
+				"incapacitated",
+				"poisoned",
+				"restrained"
+			],
+			"damageTags": [
+				"B",
+				"I"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"RW",
+				"AOE"
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/LukasDnD/MyHomebrewMonsters/main/Images/Tokens/Whipskein_Horror_token.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/LukasDnD/MyHomebrewMonsters/main/Images/Art/Whipskein_Horror.png"
+						}
+					}
+				]
+			}
+		}
+	]
+}
