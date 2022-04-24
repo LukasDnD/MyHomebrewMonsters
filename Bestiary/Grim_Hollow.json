@@ -20,6 +20,98 @@
 	},
 	"monster": [
 		{
+			"name": "Rabenhex",
+			"size": [
+				"S"
+			],
+			"type": "monstrosity",
+			"source": "LukasHB",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"formula": "3d6",
+				"average": 10
+			},
+			"speed": {
+				"walk": 10,
+				"fly": 60,
+				"canHover": false
+			},
+			"str": 3,
+			"dex": 15,
+			"con": 10,
+			"int": 3,
+			"wis": 13,
+			"cha": 9,
+			"passive": 13,
+			"cr": "1/4",
+			"trait": [
+				{
+					"name": "Flyby",
+					"entries": [
+						"The rabenhex doesn’t provoke opportunity attacks when it flies out of an enemy’s reach."
+					]
+				},
+				{
+					"name": "Hex (Recharges when the Hex Ends)",
+					"entries": [
+						"As a bonus action, the rabenhex places a curse on a creature it can see within 60 feet of it. The target has disadvantage on attack rolls against rabenhexes or hags. The curse lasts for 1 minute; until the target drops to 0 hit points; or until the rabenhex attacks a different creature, becomes {@condition incapacitated}, or dies. If the rabenhex is hidden, using this trait doesn’t reveal its location."
+					]
+				},
+				{
+					"name": "Keen Hearing and Sight",
+					"entries": [
+						"The rabenhex has advantage on Wisdom (Perception) checks that rely on hearing or sight."
+					]
+				}
+			],
+			"traitTags": [
+				"Flyby",
+				"Keen Senses"
+			],
+			"damageTags": [
+				"N",
+				"S"
+			],
+			"action": [
+				{
+					"name": "Talons",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) slashing damage and, if the target is cursed by any rabenhex’s Hex, 3 ({@damage 1d6}) necrotic damage."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/LukasDnD/MyHomebrewMonsters/main/Images/Art/Rabenhex.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://raw.githubusercontent.com/LukasDnD/MyHomebrewMonsters/main/Images/Tokens/Rabenhex_token.png",
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"SD"
+			],
+			"skill": {
+				"stealth": "+4",
+				"perception": "+3"
+			},
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
 			"name": "Grief Eater",
 			"size": [
 				"S"
