@@ -20,6 +20,115 @@
 	},
 	"monster": [
 		{
+			"name": "Grief Eater",
+			"size": [
+				"S"
+			],
+			"type": "fey",
+			"source": "LukasHB",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"formula": "10d6",
+				"average": 35
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 15,
+			"con": 11,
+			"int": 5,
+			"wis": 10,
+			"cha": 14,
+			"passive": 10,
+			"cr": "1",
+			"trait": [
+				{
+					"name": "False Appearance",
+					"entries": [
+						"While the grief eater remains motionless, it is indistinguishable from a person cloaked in grey, sitting and clutching their legs."
+					]
+				},
+				{
+					"name": "Grief Sense",
+					"entries": [
+						"The grief eater can sense a {@condition frightened} or despairing humanoid or another grief eater within 60 ft. of it. A grief eater using this sense knows the target’s location and direction of movement."
+					]
+				},
+				{
+					"name": "Light Sensitivity",
+					"entries": [
+						"While in bright light, the grief eater has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+					]
+				}
+			],
+			"traitTags": [
+				"False Appearance",
+				"Light Sensitivity"
+			],
+			"damageTags": [
+				"P",
+				"Y"
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage. If the target is {@condition frightened}, or full of sorrow or despair, it also takes 4 ({@damage 1d4 + 2}) psychic damage. The target’s hit point maximum is reduced by an amount equal to the psychic damage taken, and the grief eater regains hit points equal to that amount. The reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0. If a humanoid is slain in this way and left unburied, a grief eater emerges from the corpse 24 hours later, provided the body is in darkness."
+					]
+				},
+				{
+					"name": "Wail",
+					"entries": [
+						"With a heartrending cry, the grief eater evokes despair in one creature it can sense within 30 feet of it. The target must succeed on a {@dc 12} Charisma saving throw or become {@condition frightened} for 1 minute. A creature already full of sorrow has disadvantage on the save. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature’s saving throw is successful or the effect ends for it, the creature is immune to the Wail of any grief eater for the next 24 hours."
+					]
+				}
+			],
+			"miscTags": [
+				"MW"
+			],
+			"fluff": {
+				"entries": [
+					"DC 10 Intelligence (Arcana): Grief eaters are fey that feed on fear and sorrow. They prefer the shadows and are sensitive to bright light.",
+					"DC 15 Intelligence (Nature): A grief eater can sense people who are full of despair, fear, or sorrow, as wellas other grief eaters. Such creatures can’t hide from a grief eater"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/LukasDnD/MyHomebrewMonsters/main/Images/Art/Grief_Eater.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://raw.githubusercontent.com/LukasDnD/MyHomebrewMonsters/main/Images/Tokens/Grief_Eater_token.png",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"understands Sylvan but can’t speak"
+			],
+			"languageTags": [
+				"S"
+			],
+			"skill": {
+				"stealth": "+4"
+			},
+			"conditionInflict": [
+				"frightened"
+			]
+		},
+		{
 			"name": "Blazehorn",
 			"size": [
 				"L"
