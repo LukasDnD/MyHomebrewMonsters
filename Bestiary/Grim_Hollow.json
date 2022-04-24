@@ -20,6 +20,104 @@
 	},
 	"monster": [
 		{
+			"name": "Blazehorn",
+			"size": [
+				"L"
+			],
+			"type": "monstrosity",
+			"source": "LukasHB",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "6d10 + 12",
+				"average": 45
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 18,
+			"dex": 10,
+			"con": 15,
+			"int": 2,
+			"wis": 12,
+			"cha": 5,
+			"passive": 11,
+			"cr": "3",
+			"immune": [
+				"fire"
+			],
+			"trait": [
+				{
+					"name": "Charge",
+					"entries": [
+						"If the blazehorn moves at least 20 feet straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 7 ({@damage 2d6}) bludgeoning damage. If the target is a creature, it must succeed on a {@dc 15} Strength saving throw or fall {@condition prone}."
+					]
+				}
+			],
+			"traitTags": [
+				"Charge"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"damageTags": [
+				"B",
+				"F"
+			],
+			"action": [
+				{
+					"name": "Ram",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Firebomb {@recharge 5}",
+					"entries": [
+						"The blazehorn launches a ball of flaming tar at a point it can see within 60 feet of it. Each creature within 5 feet of that point must make a {@dc 12} Dexterity saving throw. On a failure, the target takes 7 ({@damage 3d4}) fire damage and ignites. If the save is successful, the target takes half as much fire damage and doesn’t catch fire. An ignited creature takes 2 ({@damage 1d4}) fire damage at the start of each of its turns. A creature can use its action to repeat the save, extinguishing the flames on a success. Flammable objects in the area also catch fire."
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"AOE"
+			],
+			"reaction": [
+				{
+					"name": "Defensive Launch",
+					"entries": [
+						"When the blazehorn drops to fewer than half its hit points, it recharges Firebomb and uses it immediately. It targets the source of the damage that triggered this reaction if possible."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"DC 10 Intelligence (Nature): Blazehorns are hulking ruminants that produce a tar like alchemist’s fire. They prefer scorched plants and ash for food.",
+					"DC 15 Intelligence (Arcana): A blazehorn is immune to fire damage.",
+					"DC 20 Intelligence (Nature): When wounded, a blazehorn can emit a retaliatory firebomb."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/LukasDnD/MyHomebrewMonsters/main/Images/Art/Blazehorn.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://raw.githubusercontent.com/LukasDnD/MyHomebrewMonsters/main/Images/Tokens/Blazehorn_token.png"
+		},
+		{
 			"name": "Angel of Empyreus",
 			"size": [
 				"L"
