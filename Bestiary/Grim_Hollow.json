@@ -20,12 +20,149 @@
 	},
 	"monster": [
 		{
+			"name": "Living Dream",
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"source": "LukasHB",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"formula": "8d8",
+				"average": 36
+			},
+			"speed": {
+				"fly": {
+					"number": 40,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"str": 7,
+			"dex": 15,
+			"con": 11,
+			"int": 10,
+			"wis": 14,
+			"cha": 16,
+			"passive": 12,
+			"cr": "2",
+			"shortName": true,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"understands all languages but can’t speak"
+			],
+			"languageTags": [
+				"XX"
+			],
+			"immune": [
+				"poison"
+			],
+			"resist": [
+				"acid",
+				"cold",
+				"fire",
+				"lightning",
+				"necrotic",
+				"thunder",
+				{
+					"special": "bludgeoning, piercing, and slashing from nonmagical attacks"
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone"
+			],
+			"trait": [
+				{
+					"name": "Incorporeal Movement.",
+					"entries": [
+						"The living dream can move through other creatures and objects as if they were difficult terrain. It takes 5 ({@damage 1d10}) force damage if it ends its turn inside an object."
+					]
+				},
+				{
+					"name": "Nimble Escape",
+					"entries": [
+						"The living dream can use a bonus action to take the Disengage or Hide action."
+					]
+				}
+			],
+			"damageTags": [
+				"O",
+				"Y"
+			],
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The living dream’s innate spellcasting ability is Charisma (spell save {@dc 13}). It can innately cast the following spells, requiring no components:"
+					],
+					"will": [
+						"{@spell minor illusion}",
+						"{@spell silent image}"
+					],
+					"daily": {
+						"1": [
+							"{@spell hypnotic pattern}"
+						],
+						"3e": [
+							"{@spell charm person}",
+							"{@spell major image}",
+							"{@spell phantasmal force}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"damageTagsSpell": [
+				"Y"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"action": [
+				{
+					"name": "Dream Strike.",
+					"entries": [
+						"{@atk ms,rs} {@hit 5} to hit, reach 5 ft. or range 60 ft., one creature. {@h}12 ({@damage 2d8 + 3}) psychic damage, and the target has disadvantage on the next attack roll or ability check it makes before the end of its next turn."
+					]
+				}
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/LukasDnD/MyHomebrewMonsters/main/Images/Tokens/Living_Dream_token_token.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/LukasDnD/MyHomebrewMonsters/main/Images/Art/Living_Dream.png"
+						}
+					}
+				]
+			}
+		},
+		{
 			"name": "Gore Elemental",
 			"size": [
 				"L"
 			],
 			"type": "elemental",
-			"source": "9F",
+			"source": "LukasHB",
 			"alignment": [
 				"C",
 				"E"
