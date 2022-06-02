@@ -20,6 +20,123 @@
 	},
 	"monster": [
 		{
+			"name": "Urban Ranger",
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"source": "LukasHB",
+			"alignment": [
+				{
+					"special": "(any alignment)"
+				}
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"studded leather"
+					]
+				}
+			],
+			"hp": {
+				"formula": "8d8 + 16",
+				"average": 52
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 30
+			},
+			"str": 12,
+			"dex": 17,
+			"con": 14,
+			"int": 11,
+			"wis": 15,
+			"cha": 11,
+			"passive": 16,
+			"cr": "3",
+			"shortName": true,
+			"skill": {
+				"athletics": "+5",
+				"perception": "+6",
+				"stealth": "+7",
+				"survival": "+6"
+			},
+			"languages": [
+				"Any two"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The urban ranger is an 8th-level spellcaster that uses Wisdom as its spellcasting ability (spell save {@dc 12}; +4 to hit with spell attacks). It knows the following spells from the ranger spell list:"
+					],
+					"daily": {
+						"3": [
+							"{@spell pass without trace}",
+							"{@spell spike growth}"
+						],
+						"4": [
+							"{@spell cure wounds}",
+							"{@spell fog cloud}",
+							"{@spell hunter's mark}"
+						]
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"damageTagsSpell": [
+				"P"
+			],
+			"spellcastingTags": [
+				"CR"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The urban ranger makes two melee attacks or two ranged attacks."
+					]
+				},
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage."
+					]
+				},
+				{
+					"name": "Longbow",
+					"entries": [
+						"{@atk rw} {@hit 5} to hit, ranged 150/600 ft., one target. {@h}7 ({@damage 1d8 + 3}) piercing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"RNG"
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/LukasDnD/MyHomebrewMonsters/main/Images/Tokens/Urban_Ranger_token.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/LukasDnD/MyHomebrewMonsters/main/Images/Art/Urban_Ranger.png"
+						}
+					}
+				]
+			}
+		},
+		{
 			"name": "Living Nightmare",
 			"size": [
 				"M"
