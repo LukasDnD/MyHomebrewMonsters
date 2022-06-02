@@ -20,6 +20,152 @@
 	},
 	"monster": [
 		{
+			"name": "Anguisher",
+			"size": [
+				"M"
+			],
+			"type": "aberration",
+			"source": "LukasHB",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 10,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d8 + 20",
+				"average": 65
+			},
+			"speed": {
+				"fly": {
+					"number": 30,
+					"condition": "(hover only)"
+				},
+				"canHover": true
+			},
+			"str": 8,
+			"dex": 14,
+			"con": 15,
+			"int": 8,
+			"wis": 10,
+			"cha": 17,
+			"passive": 12,
+			"cr": "4",
+			"shortName": true,
+			"languages": [
+				"understands all languages but can’t speak",
+				"telepathy 60 ft."
+			],
+			"languageTags": [
+				"XX",
+				"TP"
+			],
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"skill": {
+				"insight": "+2",
+				"perception": "+2",
+				"stealth": "+4"
+			},
+			"resist": [
+				"psychic",
+				{
+					"special": "bludgeoning, piercing, and slashing from nonmagical attacks"
+				}
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"prone",
+				"restrained",
+				"unconscious"
+			],
+			"trait": [
+				{
+					"name": "Amorphous",
+					"entries": [
+						"The anguisher can move through a spaceas narrow as 1 inch wide without squeezing."
+					]
+				},
+				{
+					"name": "Continued Suffering",
+					"entries": [
+						"A creature that has an Intelligence score of 4 or higher and dies from an anguisher’s attacks spawns a new anguisher in 3 days. Any effect that prevents the body from becoming undead also prevents the emergence of the new anguisher."
+					]
+				},
+				{
+					"name": "Frightening Advantage",
+					"entries": [
+						"The anguisher has advantage on attack rolls against creatures that are {@condition frightened}. Against such targets, the anguisher scores a critical hit on a roll of 18 to 20."
+					]
+				}
+			],
+			"traitTags": [
+				"Amorphous"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The anguisher uses anguish twice."
+					]
+				},
+				{
+					"name": "Anguish",
+					"entries": [
+						"{@atk ms,rs} {@hit 5} to hit, reach 5 ft. or range 60 ft., one creature. {@h}13 ({@damage 3d6 + 3}) psychic damage, and the target is {@condition frightened} of the anguisher and must use its reaction to move its speed away by the safest possible route. Movement used during this reaction can’t be used during the target’s turn."
+					]
+				},
+				{
+					"name": "Harrow {@recharge}",
+					"entries": [
+						"Each creature of the anguisher’s choice within 60 feet and aware of the anguisher must make a {@dc 13} Wisdom saving throw. On a failure, a creature takes 17 ({@damage 5d6}) psychic damage and becomes {@condition frightened} for 1 minute. If the save succeeds, the creature takes half the damage and isn’t {@condition frightened}. A {@condition frightened} creature can repeat the saving throw at the end of each of its turns, ending the condition on itself on a success."
+					]
+				},
+				{
+					"name": "Invisibility",
+					"entries": [
+						"The anguisher magically turns {@condition invisible} until it attacks or until its concentration ends (as if concentrating on a spell)."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"conditionInflict": [
+				"frightened",
+				"invisible"
+			],
+			"damageTags": [
+				"Y"
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/LukasDnD/MyHomebrewMonsters/main/Images/Tokens/Anguisher_token.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/LukasDnD/MyHomebrewMonsters/main/Images/Art/Anguisher.png"
+						}
+					}
+				]
+			}
+		},
+		{
 			"name": "Urban Ranger",
 			"size": [
 				"M"
