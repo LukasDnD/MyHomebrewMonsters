@@ -20,6 +20,152 @@
 	},
 	"monster": [
 		{
+			"name": "Herald of Calamity",
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"source": "LukasHB",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "20d8 + 28",
+				"average": 118
+			},
+			"speed": {
+				"walk": 0,
+				"fly": {
+					"number": 40,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"str": 7,
+			"dex": 12,
+			"con": 10,
+			"int": 19,
+			"wis": 18,
+			"cha": 17,
+			"passive": 18,
+			"cr": "9",
+			"shortName": true,
+			"senses": [
+				"Darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Common"
+			],
+			"languageTags": [
+				"C"
+			],
+			"save": {
+				"int": "+8",
+				"wis": "+8",
+				"cha": "+7"
+			},
+			"skill": {
+				"perception": "+8"
+			},
+			"resist": [
+				"acid",
+				"cold",
+				"fire",
+				"lightning",
+				"thunder",
+				{
+					"special": "Piercing, and Slashing from nonmagical attacks"
+				}
+			],
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained"
+			],
+			"trait": [
+				{
+					"name": "Aura of Calamity",
+					"entries": [
+						"While within 30 feet of the Herald of Calamity, creatures hostile to it have disadvantage on all attack rolls, saving throws, and ability checks. Additionally, if a hostile creature would take damage from a source other than a creature, such as fall damage or a trap, that damage is maximised."
+					]
+				},
+				{
+					"name": "Incorporeal Movement",
+					"entries": [
+						"The herald of calamity can move through other creatures and objects as if they were {@quickref difficult terrain||3}. It takes 5 ({@dice 1d10}) force damage if it ends its turn inside an object."
+					]
+				}
+			],
+			"traitTags": [
+				"Incorporeal Movement"
+			],
+			"damageTags": [
+				"N",
+				"O"
+			],
+			"action": [
+				{
+					"name": "Life Drain",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one creature. {@h}22 ({@damage 4d8 + 4}) necrotic damage, and the Herald of Calamity regains hit points equal to half the amount of damage the target takes."
+					]
+				},
+				{
+					"name": "Invisibility",
+					"entries": [
+						"The Herald of Calamity magically turns {@condition invisible} until it attacks, until its concentration ends, or until it enters moonlight. Any equipment the Herald of Calamity wears or carries is {@condition invisible} with it."
+					]
+				}
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"invisible"
+			],
+			"reaction": [
+				{
+					"name": "Mishap",
+					"entries": [
+						"One weapon or spell attack that misses the Herald of Calamity is redirected to a target creature within 5 ft., other than the creature that made the attack. If the original attack roll would hit that creature, it deals damage as normal."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/LukasDnD/MyHomebrewMonsters/main/Images/Art/Herald_of_Calamity.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://raw.githubusercontent.com/LukasDnD/MyHomebrewMonsters/main/Images/Tokens/Herald_of_Calamity_token.png"
+		},
+		{
 			"name": "Anguisher",
 			"size": [
 				"M"
