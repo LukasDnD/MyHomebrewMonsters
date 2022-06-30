@@ -20,6 +20,151 @@
 	},
 	"monster": [
 		{
+			"name": "Crimson Countess",
+			"size": [
+				"M"
+			],
+			"type": "monstrosity",
+			"source": "LukasHB",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "20d8 + 40",
+				"average": 130
+			},
+			"speed": {
+				"walk": 20,
+				"fly": 60,
+				"canHover": false
+			},
+			"str": 10,
+			"dex": 21,
+			"con": 15,
+			"int": 13,
+			"wis": 11,
+			"cha": 19,
+			"passive": 16,
+			"cr": "8",
+			"shortName": true,
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"SD"
+			],
+			"damageTags": [
+				"L",
+				"P",
+				"S",
+				"T"
+			],
+			"fluff": {
+				"entries": [
+					"The Crimson Countess is a powerful harpy matriarch. Recognizable by her red-feathered wings and deep crimson hair, she is clad in black and gold armour and carries with her a spear that crackles with electrical energies. "
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/LukasDnD/MyHomebrewMonsters/main/Images/Art/Crimson_Countess.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://raw.githubusercontent.com/LukasDnD/MyHomebrewMonsters/main/Images/Tokens/Crimson_Countess_token.png",
+			"languages": [
+				"Abyssal"
+			],
+			"languageTags": [
+				"AB"
+			],
+			"save": {
+				"con": "+5",
+				"wis": "+3"
+			},
+			"skill": {
+				"acrobatics": "+11",
+				"deception": "+7",
+				"perception": "+6"
+			},
+			"immune": [
+				"lightning",
+				"thunder"
+			],
+			"trait": [
+				{
+					"name": "Aerial Acrobat",
+					"entries": [
+						"On each of her turns, the Crimson Countess can use a bonus action to take the Dash, Disengage, or Dodge action."
+					]
+				},
+				{
+					"name": "Keen Sight",
+					"entries": [
+						"The Crimson Countess has advantage on Wisdom (Perception) checks that rely on sight."
+					]
+				}
+			],
+			"traitTags": [
+				"Keen Senses"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Crimson Countess can use her Frightful Screech. She then makes two attacks with her talons or one with her javelin."
+					]
+				},
+				{
+					"name": "Talons",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}11 ({@damage 1d10 + 5}) slashing damage."
+					]
+				},
+				{
+					"name": "Frightful Screech",
+					"entries": [
+						"Each creature of the Crimson Countess’ choice that is within 120 feet of her and not {@condition deafened} must succeed on a {@dc 15} Wisdom saving throw or become {@condition frightened} for 1 minute. If a creature’s saving throw is successful or the effect ends for it, the creature is immune to the effects of the Crimson Countess’ Frightful Screech for the next 24 hours. While {@condition frightened} by this effect, a creature must take the Dash action and move away from the Crimson Countess by the safest available route on each of its turns, unless there is nowhere to move. If the creature ends its turn in a location where it doesn’t have line of sight to the Crimson Countess, the creature can repeat the saving throw. On a successful save, the effect ends for that creature."
+					]
+				},
+				{
+					"name": "Javelin",
+					"entries": [
+						"{@atk mw,rw} {@hit 8} to hit, reach 5 ft. or ranged 20/60 feet, one target. Hit. 9 ({@damage 1d6 + 5}) piercing damage, plus 14 ({@damage 4d6}) lightning damage."
+					]
+				},
+				{
+					"name": "Thunder Blast {@recharge 5}",
+					"entries": [
+						"The Crimson Countess unleashes a thunderous cry in a 15-foot cube. Each creature in the cube must succeed on a {@dc 15} Constitution saving throw, taking 14 ({@damage 4d6}) thunder damage on a failed save, or half as much damage on a successful one. Creatures who fail this saving throw are pushed 10 feet and knocked {@condition prone}."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW",
+				"AOE"
+			],
+			"conditionInflict": [
+				"frightened"
+			]
+		},
+		{
 			"name": "Delerium Dreg",
 			"size": [
 				"M"
