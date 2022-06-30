@@ -20,6 +20,86 @@
 	},
 	"monster": [
 		{
+			"name": "Delerium Dreg",
+			"size": [
+				"M"
+			],
+			"type": "aberration",
+			"source": "LukasHB",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 11,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "5d8",
+				"average": 22
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 15,
+			"dex": 13,
+			"con": 11,
+			"int": 7,
+			"wis": 10,
+			"cha": 5,
+			"passive": 10,
+			"cr": "1/2",
+			"shortName": true,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"damageTags": [
+				"P"
+			],
+			"fluff": {
+				"entries": [
+					"Many who succumb to contamination become grotesque mockeries of their former selves. They suffer a wretched and loathsome fate, aimlessly wandering the ruins following half forgotten memories. Most are gripped by despair, fear, and madness which drive them to act violently, though a rare few experience lucidity and a gruesome awareness of their miserable state. Their distorted and emaciated bodies are sustained by the magic of the Haze."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/LukasDnD/MyHomebrewMonsters/main/Images/Art/Delerium_Dreg.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://raw.githubusercontent.com/LukasDnD/MyHomebrewMonsters/main/Images/Tokens/Delerium_Dreg_token.png",
+			"trait": [
+				{
+					"name": "Misty Camouflage",
+					"entries": [
+						"A delerium dreg has advantage on Dexterity (Stealth) checks to hide in any area obscured by mist or fog."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Spear",
+					"entries": [
+						"{@atk mw,rw} {@hit 4} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage, or 6 ({@damage 1d8 + 2}) piercing damage if used with two hands to make a melee attack."
+					]
+				}
+			],
+			"miscTags": [
+				"RW",
+				"MW",
+				"THW"
+			]
+		},
+		{
 			"name": "Lord of the Feast",
 			"size": [
 				"L"
