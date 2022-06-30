@@ -20,6 +20,170 @@
 	},
 	"monster": [
 		{
+			"name": "Executioner",
+			"size": [
+				"H"
+			],
+			"type": "construct",
+			"source": "LukasHB",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "30d12 + 210",
+				"average": 405
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 29,
+			"dex": 11,
+			"con": 25,
+			"int": 10,
+			"wis": 11,
+			"cha": 0,
+			"passive": 10,
+			"cr": "20",
+			"shortName": true,
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"SD"
+			],
+			"damageTags": [
+				"N",
+				"S"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/LukasDnD/MyHomebrewMonsters/main/Images/Art/Executioner.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://raw.githubusercontent.com/LukasDnD/MyHomebrewMonsters/main/Images/Tokens/Executioner_token.png",
+			"languages": [
+				"Understands common but does not speak"
+			],
+			"save": {
+				"con": "+13",
+				"wis": "+6",
+				"str": "+15"
+			},
+			"immune": [
+				"poison",
+				"psychic",
+				{
+					"special": "bludgeoning, piercing, and slashing from nonmagical weapons that aren’t adamantine"
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned"
+			],
+			"trait": [
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If the executioner fails a saving throw, it can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Immutable Form",
+					"entries": [
+						"The executioner is immune to any spell or effect that would alter its form."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The executioner has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Magic Weapons",
+					"entries": [
+						"The executioner's weapon attacks are magical."
+					]
+				},
+				{
+					"name": "Rejuvenation",
+					"entries": [
+						"If the Executioner is destroyed, it returns with all its hitpoints in 24 hours unless a disintegrate spell is cast on its remains."
+					]
+				}
+			],
+			"traitTags": [
+				"Immutable Form",
+				"Legendary Resistances",
+				"Magic Resistance",
+				"Magic Weapons",
+				"Rejuvenation"
+			],
+			"action": [
+				{
+					"name": "Guillotine Blade",
+					"entries": [
+						"{@atk mw} {@hit 15} to hit, reach 10 ft., or range 30/120 ft., one target. {@h}30 ({@damage 6d6 + 9}) slashing damage plus 14 ({@damage 4d6}) necrotic damage. The target must succeed on a {@dc 21} Constitution saving throw or its hit point maximum is reduced by an amount equal to the necrotic damage taken. This reduction lasts until the creature finishes a long rest. The target dies if this effect reduces its hit point maximum to 0. Immediately after making a ranged attack, this weapon flies back to the Executioner’s hands. "
+					]
+				},
+				{
+					"name": "Necrotic Vents {@recharge 5}",
+					"entries": [
+						"The Executioner vents necrotic gas in a 30-foot radius. Each creature in that area must succeed on a {@dc 21} Constitution saving throw, taking 45 ({@damage 10d8}) necrotic damage on a failed save, or half as much damage on a successful one. A creature who fails this saving throw by 5 or more gains one level of contamination."
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"HPR",
+				"AOE"
+			],
+			"legendaryActions": 3,
+			"legendaryHeader": [
+				"The Executioner can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature’s turn. The Executioner regains spent legendary actions at the start of its turn."
+			],
+			"legendary": [
+				{
+					"name": "Lumber Forward (Costs 2 actions)",
+					"entries": [
+						"The Executioner moves half its speed."
+					]
+				},
+				{
+					"name": "Attack (Costs 2 actions)",
+					"entries": [
+						"The Executioner makes a melee or ranged attack with its Guillotine Blade."
+					]
+				},
+				{
+					"name": "Summon Shadows. (Costs 3 actions)",
+					"entries": [
+						"The Executioner targets up to six humanoid corpses it can see within 60 feet of it that have died violently. Each target’s spirit rises as a shadow in the space of its corpse or in the nearest unoccupied space. The shadows act after the Executioner on the same initiative count, are under its control, and remain for 1 minute or until they’re destroyed. They disappear if the Executioner is destroyed."
+					]
+				}
+			]
+		},
+		{
 			"name": "Crimson Countess",
 			"size": [
 				"M"
