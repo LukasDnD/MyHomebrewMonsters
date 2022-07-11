@@ -20,6 +20,126 @@
 	},
 	"monster": [
 		{
+			"name": "Protean Abomination",
+			"size": [
+				"H"
+			],
+			"type": "aberration",
+			"source": "LukasHB",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "16d12 + 64",
+				"average": 168
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 10
+			},
+			"str": 21,
+			"dex": 8,
+			"con": 18,
+			"int": 5,
+			"wis": 10,
+			"cha": 5,
+			"passive": 10,
+			"cr": "6",
+			"shortName": true,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"damageTags": [
+				"B"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/LukasDnD/MyHomebrewMonsters/main/Images/Art/Protean_Abomination.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://raw.githubusercontent.com/LukasDnD/MyHomebrewMonsters/main/Images/Tokens/Protean_Abomination_token.png",
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"prone"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The protean abomination makes two slam attacks. If both attacks hit a Large or smaller target, the target is {@condition grappled} (escape {@dc 15}), and the protean abomination uses Engulf on it."
+					]
+				},
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}19 ({@damage 3d8 + 5}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Engulf",
+					"entries": [
+						"The protean abomination engulfs a Large or smaller creature {@condition grappled} by it. Until the grapple ends the target is {@condition blinded}, {@condition restrained}, and unable to breathe, and it must succeed on a {@dc 15} Constitution saving throw at the start of each of the abomination’s turns or take 19 ({@damage 3d8 + 5}) bludgeoning damage. If the abomination moves, the engulfed target moves with it. The abomination can have only one creature engulfed at a time."
+					]
+				}
+			],
+			"miscTags": [
+				"MW"
+			],
+			"legendaryActions": 3,
+			"trait": [
+				{
+					"name": "Absorption",
+					"entries": [
+						"When the protean abomination kills a creature that is",
+						"neither a construct nor undead, it absorbs the corpse into its body",
+						"and regains 20 hit points."
+					]
+				},
+				{
+					"name": "Amorphous",
+					"entries": [
+						"The protean abomination can move through a space as narrow as 1 inch wide without squeezing."
+					]
+				},
+				{
+					"name": "Spider Climb",
+					"entries": [
+						"The protean abomination can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+					]
+				}
+			],
+			"traitTags": [
+				"Amorphous",
+				"Spider Climb"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"conditionInflict": [
+				"blinded",
+				"grappled",
+				"restrained"
+			]
+		},
+		{
 			"name": "Executioner",
 			"size": [
 				"H"
