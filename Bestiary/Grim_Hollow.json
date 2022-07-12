@@ -20,6 +20,251 @@
 	},
 	"monster": [
 		{
+			"name": "Warlock of the Rat God",
+			"size": [
+				"S"
+			],
+			"type": "monstrosity",
+			"source": "LukasHB",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "6d6 + 6",
+				"average": 27
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 30,
+				"swim": 30
+			},
+			"str": 7,
+			"dex": 14,
+			"con": 13,
+			"int": 13,
+			"wis": 11,
+			"cha": 15,
+			"passive": 10,
+			"cr": "2",
+			"shortName": true,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"damageTags": [
+				"P"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/LukasDnD/MyHomebrewMonsters/main/Images/Art/Ratling.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://raw.githubusercontent.com/LukasDnD/MyHomebrewMonsters/main/Images/Tokens/Warlock_of_the_Rat_God_token.png",
+			"legendaryActions": 3,
+			"languages": [
+				"Common"
+			],
+			"languageTags": [
+				"C"
+			],
+			"skill": {
+				"stealth": "+4",
+				"deception": "+4"
+			},
+			"trait": [
+				{
+					"name": "Skulker",
+					"entries": [
+						"The ratling can take the Hide action as a bonus action on each of its turns."
+					]
+				},
+				{
+					"name": "Keen Smell",
+					"entries": [
+						"The warlock of the rat god has advantage on Wisdom ({@skill Perception}) checks that rely on smell."
+					]
+				}
+			],
+			"traitTags": [
+				"Keen Senses"
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage."
+					]
+				}
+			],
+			"miscTags": [
+				"MW"
+			],
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The warlock’s innate spellcasting ability is Charisma. It can innately cast the following spells (spell save {@dc 12}, +4 to hit with spell attacks), requiring no material components:"
+					],
+					"will": [
+						"{@spell eldritch blast} (2 beams)",
+						"{@spell mage armor}",
+						"{@spell minor illusion}",
+						"{@spell thaumaturgy}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell augury}",
+							"{@spell burning hands}",
+							"{@spell conjure animals} (giant rat only)",
+							"{@spell faerie fire}",
+							"{@spell invisibility}",
+							"{@spell misty step}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"I",
+				"CL"
+			],
+			"damageTagsSpell": [
+				"F",
+				"O"
+			]
+		},
+		{
+			"name": "Ratling",
+			"size": [
+				"S"
+			],
+			"type": "monstrosity",
+			"source": "LukasHB",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "2d6 - 2",
+				"average": 5
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 30,
+				"swim": 30
+			},
+			"str": 7,
+			"dex": 15,
+			"con": 8,
+			"int": 8,
+			"wis": 10,
+			"cha": 5,
+			"passive": 10,
+			"cr": "1/8",
+			"shortName": true,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/LukasDnD/MyHomebrewMonsters/main/Images/Art/Ratling.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://raw.githubusercontent.com/LukasDnD/MyHomebrewMonsters/main/Images/Tokens/Ratling_token.png",
+			"legendaryActions": 3,
+			"languages": [
+				"Common"
+			],
+			"languageTags": [
+				"C"
+			],
+			"skill": {
+				"stealth": "+6"
+			},
+			"trait": [
+				{
+					"name": "Keen Smell",
+					"entries": [
+						"The ratling has advantage on Wisdom ({@skill Perception}) checks that rely on smell."
+					]
+				},
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The ratling has advantage on an attack roll against a creature if at least one of the ratling's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "Skulker",
+					"entries": [
+						"The ratling can take the Hide action as a bonus action on each of its turns."
+					]
+				}
+			],
+			"traitTags": [
+				"Keen Senses",
+				"Pack Tactics"
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage."
+					]
+				},
+				{
+					"name": "Sling",
+					"entries": [
+						"{@atk rw} {@hit 4} to hit, range 30/120 ft., one target. {@h}4 ({@damage 1d4 + 2}) bludgeoning damage."
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"RNG"
+			]
+		},
+		{
 			"name": "Protean Abomination",
 			"size": [
 				"H"
