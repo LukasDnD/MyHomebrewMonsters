@@ -20,6 +20,107 @@
 	},
 	"monster": [
 		{
+			"name": "Haze Hulk",
+			"source": "LukasHB",
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				8
+			],
+			"hp": {
+				"average": 22,
+				"formula": "3d8 + 9"
+			},
+			"speed": {
+				"walk": 20
+			},
+			"str": 13,
+			"dex": 6,
+			"con": 16,
+			"int": 3,
+			"wis": 6,
+			"cha": 5,
+			"save": {
+				"wis": "+0"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 8,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"languages": [
+				"understands all languages it spoke in life but can't speak"
+			],
+			"cr": "1/4",
+			"trait": [
+				{
+					"name": "Death Burst",
+					"entries": [
+						"If damage reduces the haze husk to 0 hit points, the delerium fragments in its body explode in a burst of contaminated energy, unless the damage is radiant or from a critical hit. Each creature within 5 feet of it must succeed on a {@dc 10} Constitution saving throw or take 7 ({@damage 2d6}) necrotic damage. Creatures who fail this saving throw by 5 or more gain one level of contamination."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d6 + 1}) bludgeoning damage."
+					]
+				}
+			],
+			"environment": [
+				"urban"
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/zombie.mp3"
+			},
+			"traitTags": [
+				"Death Burst"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"CS",
+				"LF"
+			],
+			"damageTags": [
+				"B",
+				"N"
+			],
+			"miscTags": [
+				"MW",
+				"AOE"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"tokenUrl": "https://raw.githubusercontent.com/LukasDnD/MyHomebrewMonsters/main/Images/Tokens/Haze_Hulk_token.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/LukasDnD/MyHomebrewMonsters/main/Images/Art/Haze_Hulk.png"
+						}
+					}
+				]
+			},
+			"shortName": true
+		},
+		{
 			"name": "Warlock of the Rat God",
 			"size": [
 				"S"
