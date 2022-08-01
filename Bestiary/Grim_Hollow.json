@@ -20,6 +20,145 @@
 	},
 	"monster": [
 		{
+			"name": "Rat Prince",
+			"source": "LukasHB",
+			"basicRules": true,
+			"size": [
+				"M"
+			],
+			"type": "monstrosity",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "12d8 + 12",
+				"average": 66
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 30,
+				"climb": 30
+			},
+			"str": 12,
+			"dex": 19,
+			"con": 13,
+			"int": 9,
+			"wis": 15,
+			"cha": 9,
+			"skill": {
+				"perception": "+6",
+				"stealth": "+8",
+				"acrobatics": "+6",
+				"athletics": "+3"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 16,
+			"languages": [
+				"Common"
+			],
+			"cr": "3",
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Rat Prince makes three attacks: two with his short swords, and one with his contaminated bite."
+					]
+				},
+				{
+					"name": "Short Sword",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 4}) piercing damage."
+					]
+				},
+				{
+					"name": "Contaminated Bite",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 4}) piercing damage, plus an extra 10 ({@damage 3d6}) necrotic damage, and the creature must succeed on a {@dc 11} Constitution saving throw or gain one level of contamination."
+					]
+				},
+				{
+					"name": "Hand Crossbow",
+					"entries": [
+						"{@atk rw} {@hit 6} to hit, range 30/120 ft., one target. {@h}7 ({@damage 1d6 + 4}) piercing damage."
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"N",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"RNG"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"tokenUrl": "https://raw.githubusercontent.com/LukasDnD/MyHomebrewMonsters/main/Images/Tokens/Rat_Prince_token.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/LukasDnD/MyHomebrewMonsters/main/Images/Art/Rat_Prince.png"
+						}
+					}
+				]
+			},
+			"shortName": true,
+			"trait": [
+				{
+					"name": "Keen Smell",
+					"entries": [
+						"The rat prince has advantage on Wisdom ({@skill Perception}) checks that rely on smell."
+					]
+				},
+				{
+					"name": "Cunning Action",
+					"entries": [
+						"The Rat Prince can take the Dash, Disengage, or Hide action as a bonus action on each of its turns."
+					]
+				},
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The rat prince has advantage on an attack roll against a creature if at least one of the rat prince's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "Contaminated Ammunition",
+					"entries": [
+						"The Rat Prince carries {@dice 2d6} pieces of ammunition laced with delerium fragments. These projectiles cause {@damage 1d6} extra damage on a hit, and the target must succeed on a {@dc 10} Constitution saving throw or gain one level of contamination."
+					]
+				}
+			],
+			"traitTags": [
+				"Keen Senses",
+				"Pack Tactics"
+			]
+		},
+		{
 			"name": "Haze Wight",
 			"source": "LukasHB",
 			"basicRules": true,
