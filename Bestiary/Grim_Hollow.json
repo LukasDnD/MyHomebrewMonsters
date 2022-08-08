@@ -20,6 +20,228 @@
 	},
 	"monster": [
 		{
+			"name": "Queen of Thieves",
+			"source": "LukasHB",
+			"basicRules": true,
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 23,
+					"from": [
+						"canny defense, mage armour"
+					]
+				}
+			],
+			"hp": {
+				"formula": "16d8 + 16",
+				"average": 88
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 20,
+			"con": 13,
+			"int": 20,
+			"wis": 16,
+			"cha": 19,
+			"skill": {
+				"perception": "+8",
+				"arcana": "+10",
+				"history": "+10",
+				"acrobatics": "+10",
+				"deception": "+14",
+				"insight": "+8",
+				"persuasion": "+9",
+				"sleight of hand": "+10",
+				"stealth": "+15"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 18,
+			"languages": [
+				"Common",
+				"Dwarvish",
+				"Elvish",
+				"Undercommon"
+			],
+			"cr": "15",
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C",
+				"D",
+				"E",
+				"U"
+			],
+			"damageTags": [
+				"P"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"tokenUrl": "https://raw.githubusercontent.com/LukasDnD/MyHomebrewMonsters/main/Images/Tokens/Queen_of_Thieves_token.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/LukasDnD/MyHomebrewMonsters/main/Images/Art/Queen_of_Thieves.png"
+						}
+					}
+				]
+			},
+			"shortName": true,
+			"save": {
+				"int": "+10",
+				"dex": "+10"
+			},
+			"conditionImmune": [
+				"charmed"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The Pale Man is a 16th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 18}, +10 to hit with spell attacks). The Pale Man has the following wizard spells prepared:"
+					],
+					"daily": {
+						"3e": [
+							"{@spell counterspell}",
+							"{@spell feather fall}",
+							"{@spell hold person}",
+							"{@spell invisibility}",
+							"{@spell lightning bolt}",
+							"{@spell mage armor}",
+							"{@spell misty step}",
+							"{@spell see invisibility}",
+							"{@spell shield}"
+						],
+						"1e": [
+							"{@spell antimagic field}",
+							"{@spell chain lightning}",
+							"{@spell color spray}",
+							"{@spell dimension door}",
+							"{@spell forcecage}",
+							"{@spell foresight}",
+							"{@spell greater invisibility}",
+							"{@spell hypnotic pattern}",
+							"{@spell polymorph}"
+						]
+					},
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell chill touch}",
+								"{@spell mage hand}",
+								"{@spell message}",
+								"{@spell minor illusion}",
+								"{@spell prestidigitation}"
+							]
+						}
+					},
+					"will": [
+						"{@spell detect thoughts}",
+						"{@spell disguise self}",
+						"{@spell suggestion}"
+					],
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"damageTagsSpell": [
+				"L",
+				"N",
+				"O"
+			],
+			"trait": [
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If the pale man fails a saving throw, it can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Canny Defense",
+					"entries": [
+						"While the Queen of Thieves is wearing light or no armour and wielding no shield, her AC includes her Intelligence modifier."
+					]
+				},
+				{
+					"name": "Sneak Attack (1/Turn)",
+					"entries": [
+						"The Queen of Thieves deals an extra 18 ({@damage 5d6}) damage when she hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the Queen of Thieves that isn’t incapacitated and she doesn’t have disadvantage on the attack roll."
+					]
+				},
+				{
+					"name": "Memory Thief",
+					"entries": [
+						"Creatures are not aware when the Queen of Thieves reads their thoughts or charms them. Additionally, when a spell causes creatures to become {@condition charmed}; cast by the Queen of Thieves ends, she can make affected creatures lose their memories. They must succeed on a {@dc 18} Intelligence saving throw or forget up to 8 hours of the time spent {@condition charmed} by her. These memories can be restored with a heal spell or similar magic."
+					]
+				}
+			],
+			"traitTags": [
+				"Legendary Resistances",
+				"Sneak Attack"
+			],
+			"action": [
+				{
+					"name": "+3 Rapier",
+					"entries": [
+						"{@atk mw} {@hit 13} to hit, reach 5 ft., one target {@h}13 ({@damage 1d8 + 8}) piercing damage."
+					]
+				},
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk rw} {@hit 10} to hit, range 20/60 ft., one target. {@h}7 ({@damage 1d4 + 7}) piercing damage."
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW"
+			],
+			"legendaryActions": 3,
+			"legendaryHeader": [
+				"The Queen of Thieves can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature’s turn. The Queen of Thieves regains spent legendary actions at the start of her turn."
+			],
+			"legendary": [
+				{
+					"name": "Attack (Costs 1 Actions)",
+					"entries": [
+						"The Queen of Thieves makes one melee or ranged attack."
+					]
+				},
+				{
+					"name": "Move (Costs 1 Actions)",
+					"entries": [
+						"The Queen of Thieves moves up to her speed without provoking opportunity attacks."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Misdirection",
+					"entries": [
+						"When she would take damage, the Queen of Thieves becomes {@condition invisible} and teleports 60 feet to an unoccupied space she can see. At the same time, an illusory double of her appears where she was standing and lasts for 1 minute. The invisibility ends if the Queen of Thieves attacks or casts a spell, or after 1 minute."
+					]
+				}
+			]
+		},
+		{
 			"name": "Pale Man",
 			"source": "LukasHB",
 			"basicRules": true,
