@@ -20,6 +20,210 @@
 	},
 	"monster": [
 		{
+			"name": "Pale Man",
+			"source": "LukasHB",
+			"basicRules": true,
+			"size": [
+				"M"
+			],
+			"type": "aberration",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"mage armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "16d8 + 48",
+				"average": 120
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 30
+			},
+			"str": 10,
+			"dex": 15,
+			"con": 17,
+			"int": 20,
+			"wis": 15,
+			"cha": 12,
+			"skill": {
+				"perception": "+7",
+				"arcana": "+10",
+				"history": "+10"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 17,
+			"languages": [
+				"Common and any 5 other languages"
+			],
+			"cr": "13",
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"N"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"tokenUrl": "https://raw.githubusercontent.com/LukasDnD/MyHomebrewMonsters/main/Images/Tokens/Pale_Man_token.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/LukasDnD/MyHomebrewMonsters/main/Images/Art/Pale_Man.png"
+						}
+					}
+				]
+			},
+			"shortName": true,
+			"save": {
+				"int": "+10",
+				"con": "+8",
+				"wis": "+7"
+			},
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"restrained"
+			],
+			"resist": [
+				{
+					"special": "bludgeoning, piercing, and slashing from nonmagical weapons"
+				}
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The Pale Man is a 16th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 18}, +10 to hit with spell attacks). The Pale Man has the following wizard spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell chill touch}",
+								"{@spell mage hand}",
+								"{@spell mending}",
+								"{@spell prestidigitation}",
+								"{@spell shocking grasp}"
+							]
+						}
+					},
+					"daily": {
+						"3e": [
+							"{@spell counterspell}",
+							"{@spell hold person}",
+							"{@spell invisibility}",
+							"{@spell lightning bolt}",
+							"{@spell mage armor}",
+							"{@spell shield}"
+						],
+						"1e": [
+							"{@spell antimagic field}",
+							"{@spell chain lightning}",
+							"{@spell color spray}"
+						]
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"damageTagsSpell": [
+				"L",
+				"N"
+			],
+			"trait": [
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If the pale man fails a saving throw, it can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Insect Body",
+					"entries": [
+						"The Pale Man can occupy another creature’s space and vice versa, and the Pale Man can move through any opening large enough for a Tiny insect."
+					]
+				},
+				{
+					"name": "Crawling Flesh",
+					"entries": [
+						"When the Pale Man is reduced to 0 hit points, it breaks apart into a swarm of insects in the same space. Unless the swarm is destroyed, the Pale Man swarm returns to its cocoon and reforms {@dice 1d6} days later."
+					]
+				}
+			],
+			"traitTags": [
+				"Legendary Resistances"
+			],
+			"action": [
+				{
+					"name": "Contaminating Touch",
+					"entries": [
+						"{@atk ms} {@hit 8} to hit, reach 10 ft., one target. {@h}10 ({@damage 3d6}) necrotic damage, and the target must succeed on a {@dc 16} Constitution saving throw or receive one level of contamination."
+					]
+				},
+				{
+					"name": "Infest the Flesh {@recharge}",
+					"entries": [
+						"Each creature within 30 feet of the Pale Man must succeed on a {@dc 16} Dexterity saving throw or take 22 ({@damage 5d8}) necrotic damage and be {@condition restrained} by masses of swarming fleshy bugs. The affected creature takes 22 ({@damage 5d8}) necrotic damage at the start of each of the Pale Man’s turns. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+					]
+				}
+			],
+			"miscTags": [
+				"RCH",
+				"AOE"
+			],
+			"conditionInflict": [
+				"restrained"
+			],
+			"legendaryActions": 3,
+			"legendaryHeader": [
+				"The Pale Man can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature’s turn. The Pale Man regains spent legendary actions at the start of its turn."
+			],
+			"legendary": [
+				{
+					"name": "Cantrip (Costs 1 Action)",
+					"entries": [
+						"The Pale Man casts one cantrip."
+					]
+				},
+				{
+					"name": "Slither (Costs 1 Actions)",
+					"entries": [
+						"The Pale Man moves his speed without provoking opportunity attacks."
+					]
+				},
+				{
+					"name": "Contaminate (Costs 3 Actions)",
+					"entries": [
+						"Each creature {@condition restrained} by the Pale Man’s Infest the Flesh must succeed on a {@dc 16} Constitution saving throw or gain one level of contamination."
+					]
+				}
+			]
+		},
+		{
 			"name": "Rat Prince",
 			"source": "LukasHB",
 			"basicRules": true,
