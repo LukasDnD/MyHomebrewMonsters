@@ -20,6 +20,210 @@
 	},
 	"monster": [
 		{
+			"name": "Elias Drexel",
+			"source": "LukasHB",
+			"basicRules": true,
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"+3 breastplate"
+					]
+				}
+			],
+			"hp": {
+				"formula": "30d8 + 120",
+				"average": 255
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 15,
+			"con": 18,
+			"int": 15,
+			"wis": 16,
+			"cha": 11,
+			"senses": [
+				"blindsight 10 ft"
+			],
+			"passive": 23,
+			"languages": [
+				"Common"
+			],
+			"cr": "15",
+			"senseTags": [
+				"B"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"tokenUrl": "https://raw.githubusercontent.com/LukasDnD/MyHomebrewMonsters/main/Images/Tokens/Elias_Drexel_token.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/LukasDnD/MyHomebrewMonsters/main/Images/Art/Elias_Drexel.png"
+						}
+					}
+				]
+			},
+			"shortName": true,
+			"save": {
+				"dex": "+7",
+				"str": "+9",
+				"wis": "+8"
+			},
+			"conditionImmune": [
+				"charmed"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Elias Drexel is a 20th-level spellcaster. His spellcasting ability is Wisdom (spell save {@dc 16}, +8 to hit with spell attacks). He knows the following ranger spells:"
+					],
+					"daily": {
+						"3": [
+							"{@spell cure wounds}",
+							"{@spell fog cloud}",
+							"{@spell hunter's mark}",
+							"{@spell pass without trace}",
+							"{@spell protection from poison}",
+							"{@spell spike growth}"
+						],
+						"1e": [
+							"{@spell conjure animals}",
+							"{@spell freedom of movement}",
+							"{@spell nondetection}",
+							"{@spell tree stride}"
+						]
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"CR"
+			],
+			"damageTagsSpell": [
+				"P"
+			],
+			"trait": [
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						" If Elias Drexel fails a saving throw, he can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Brute",
+					"entries": [
+						"A melee weapon deals one extra die of its damage when Elias Drexel hits with it (included in the attack)."
+					]
+				},
+				{
+					"name": "Survivor",
+					"entries": [
+						"At the start of each of his turns, Elias Drexel regains 10 hit points if he has no more than half of his hit points left. He does not gain this benefit if he has 0 hit points."
+					]
+				}
+			],
+			"traitTags": [
+				"Brute",
+				"Legendary Resistances"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Elias Drexel uses Leadership. He then makes four attacks with either his longsword or his longbow."
+					]
+				},
+				{
+					"name": "Longsword",
+					"entries": [
+						"{@atk mw} {@hit 12} to hit, reach 5 ft., one target. {@h}16 ({@damage 2d8 + 7}) slashing damage."
+					]
+				},
+				{
+					"name": "Longbow",
+					"entries": [
+						"{@atk rw} {@hit 7} to hit, range 150/600 ft., one target. {@h}7 ({@damage 1d8 + 2}) piercing damage."
+					]
+				},
+				{
+					"name": "Leadership (Recharges after a Short or Long Rest)",
+					"entries": [
+						"For 1 minute, Elias Drexel can utter a special command or warning whenever a nonhostile creature that he can see within 120 feet of him makes an attack roll or a saving throw. The creature can add a {@dice d4} to its roll provided it can hear and understand Elias Drexel. A creature can benefit from only one Leadership die at a time. This effect ends if Elias Drexel is {@condition incapacitated}."
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"RNG"
+			],
+			"legendaryActions": 3,
+			"legendaryHeader": [
+				"Elias Drexel can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature’s turn. Elias Drexel regains spent legendary actions at the start of his turn."
+			],
+			"legendary": [
+				{
+					"name": "Attack (Costs 1 Actions)",
+					"entries": [
+						"Elias Drexel makes one weapon attack. "
+					]
+				},
+				{
+					"name": "Move (Costs 1 Actions)",
+					"entries": [
+						"Elias Drexel moves up to his speed without provoking opportunity attacks."
+					]
+				},
+				{
+					"name": "Command (Costs 1 Actions)",
+					"entries": [
+						"Elias Drexel chooses one ally he can see. If that ally can see and hear him, that ally can make one weapon attack as a reaction and gains advantage on the attack roll. The attack deals an extra 10 ({@damage 3d6}) damage on a hit."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Parry",
+					"entries": [
+						"Elias Drexel adds 5 to his AC against one melee attack that would hit him. To do so, Elias Drexel must see the attacker and be wielding a melee weapon."
+					]
+				}
+			],
+			"skill": {
+				"athletics": "+9",
+				"perception": "+13",
+				"stealth": "+12",
+				"survival": "+8"
+			},
+			"actionTags": [
+				"Multiattack",
+				"Parry"
+			]
+		},
+		{
 			"name": "Queen of Thieves",
 			"source": "LukasHB",
 			"basicRules": true,
