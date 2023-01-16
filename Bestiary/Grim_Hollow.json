@@ -20,6 +20,136 @@
 	},
 	"monster": [
 		{
+			"name": "Empyrean Knight",
+			"size": [
+				"M"
+			],
+			"type": "celestial",
+			"source": "LukasHB",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "12d8 + 48",
+				"average": 102
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 60
+			},
+			"str": 18,
+			"dex": 11,
+			"con": 18,
+			"int": 12,
+			"wis": 17,
+			"cha": 16,
+			"passive": 16,
+			"cr": "7",
+			"shortName": true,
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"SD"
+			],
+			"languages": [
+				"Celestial",
+				"telepathy 120 ft."
+			],
+			"languageTags": [
+				"CE",
+				"TP"
+			],
+			"skill": {
+				"athletics": "+7",
+				"survival": "+6",
+				"perception": "+6"
+			},
+			"resist": [
+				"fire",
+				"necrotic",
+				{
+					"special": "bludgeoning, piercing, and slashing from nonmagical weapons"
+				}
+			],
+			"immune": [
+				"radiant"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened"
+			],
+			"trait": [
+				{
+					"name": "Divine Weaponry",
+					"entries": [
+						"The knight’s weapon attacks are magical. When the knight hits with any weapon, the weapon deals an extra 18 ({@damage 4d8}) radiant damage (included in the attack)."
+					]
+				},
+				{
+					"name": "Flyby",
+					"entries": [
+						"The Empyrean Knight doesn't provoke opportunity attacks when it flies out of an enemy's reach."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The Empyrean Knight has advantage on saving throws against spells and other magical effects."
+					]
+				}
+			],
+			"damageTags": [
+				"R",
+				"S"
+			],
+			"traitTags": [
+				"Flyby",
+				"Magic Resistance"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The knight makes two melee attacks."
+					]
+				},
+				{
+					"name": "Longsword",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d10 + 4}) slashing damage, plus 18 ({@damage 4d8}) radiant damage."
+					]
+				}
+			],
+			"miscTags": [
+				"MW"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/LukasDnD/MyHomebrewMonsters/main/Images/Tokens/Empyrean_Knight_token.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/LukasDnD/MyHomebrewMonsters/main/Images/Art/Empyrean_Knight.png"
+						}
+					}
+				]
+			}
+		},
+		{
 			"name": "Amalgamation",
 			"source": "LukasHB",
 			"basicRules": true,
