@@ -20,6 +20,124 @@
 	},
 	"monster": [
 		{
+			"name": "Trolloc (Boar)",
+			"size": [
+				"L"
+			],
+			"type": "monstrosity",
+			"source": "LukasHB",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"{@item scale mail|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d8 + 10",
+				"average": 55
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 17,
+			"dex": 10,
+			"con": 12,
+			"int": 5,
+			"wis": 11,
+			"cha": 6,
+			"passive": 12,
+			"cr": "2",
+			"shortName": true,
+			"languages": [
+				"Common"
+			],
+			"languageTags": [
+				"C"
+			],
+			"save": {
+				"str": "+5"
+			},
+			"skill": {
+				"athletics": "+5",
+				"perception": "+2"
+			},
+			"trait": [
+				{
+					"name": "Charge",
+					"entries": [
+						"If the Trolloc moves at least 15 feet straight toward a target and then hits it with its tusks on the same turn, the target takes an extra 7 ({@dice 2d6}) slashing damage. If the target is a creature, it must succeed on a {@dc 13} Strength saving throw or be knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Relentless (Boar)",
+					"entries": [
+						"If the Trolloc takes 7 damage or less that would reduce it to 0 hit points, it is reduced to 1 hit point instead."
+					]
+				}
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"traitTags": [
+				"Charge"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Trolloc makes two attacks."
+					]
+				},
+				{
+					"name": "Battleaxe",
+					"entries": [
+						"{@atk mw} {@hit +5} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d8 + 3}) slashing damage."
+					]
+				},
+				{
+					"name": "Tusk",
+					"entries": [
+						"{@atk mw} {@hit +5} to hit, reach 5 ft., one creature. {@h}5 ({@damage 2d4 + 3}) piercing damage."
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"MLW"
+			],
+			"attachedItems": [
+				"battleaxe|phb"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/LukasDnD/MyHomebrewMonsters/main/Images/Tokens/Trolloc_token.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/LukasDnD/MyHomebrewMonsters/main/Images/Art/Trolloc.png"
+						}
+					}
+				]
+			},
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"savingThrowForced": [
+				"strength"
+			]
+		},
+		{
 			"name": "Empyrean Knight",
 			"size": [
 				"M"
