@@ -20,6 +20,145 @@
 	},
 	"monster": [
 		{
+			"name": "Myrddraal",
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"source": "LukasHB",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item scale mail|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "20d8 + 60",
+				"average": 150
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 16,
+			"dex": 20,
+			"con": 17,
+			"int": 12,
+			"wis": 14,
+			"cha": 6,
+			"passive": 15,
+			"cr": "7",
+			"shortName": true,
+			"languages": [
+				"Common"
+			],
+			"languageTags": [
+				"C"
+			],
+			"senses": [
+				"blindsight 60 ft.",
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"B",
+				"D"
+			],
+			"save": {
+				"dex": "+8",
+				"wis": "+5"
+			},
+			"skill": {
+				"perception": "+5",
+				"acrobatics": "+8",
+				"stealth": "+8"
+			},
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"resist": [
+				"necrotic",
+				{
+					"special": "bludgeoning, piercing and slashing from non-magical weapons"
+				}
+			],
+			"trait": [
+				{
+					"name": "Dominating Leader",
+					"entries": [
+						"The Myrddraal has the option to dominate the Trollocs under its command, allowing the creatures to act and coordinate with a level of intelligence far above there own. However, if the Myrddraal is killed, any Trolloc is has dominated dies."
+					]
+				},
+				{
+					"name": "Magical Affinity",
+					"entries": [
+						"The Myrddraal can sense magical items, effects and auras within 60 ft. "
+					]
+				},
+				{
+					"name": "Death Thornes",
+					"entries": [
+						"When the Myrddraal is slain, it begins flailing around uncontrollably. For {@dice 1d4} turns, any creatue that comes within 5ft of the Myrddraal must make a {@dc 15} Dexterity Saving Throw or take {@damage 4d6} slashing damage."
+					]
+				},
+				{
+					"name": "Deaths Door",
+					"entries": [
+						"If the Myrddraal isnt slain with a magical weapon it regenerates after {@dice 1d4} days. "
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Myrddraal makes three attacks."
+					]
+				},
+				{
+					"name": "Longsword",
+					"entries": [
+						"{@atk mw} {@hit +7} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) slashing damage. The target mus make a {@dc 15} Constitution Save or be {@condition poisoned} for 1 day. If the target isnt healed after {@dice 1d6} hours after being {@condition poisoned} it is corrupted."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"MLW"
+			],
+			"attachedItems": [
+				"longsword|phb"
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/LukasDnD/MyHomebrewMonsters/main/Images/Tokens/Myrddraal_token.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/LukasDnD/MyHomebrewMonsters/main/Images/Art/Myrddraal.png"
+						}
+					}
+				]
+			},
+			"damageTags": [
+				"S"
+			],
+			"savingThrowForced": [
+				"dexterity"
+			]
+		},
+		{
 			"name": "Trolloc (Boar)",
 			"size": [
 				"L"
